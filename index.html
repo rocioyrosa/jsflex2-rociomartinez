@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de combustible para tus viajes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="py-1 text-center">
+        <p class="display-5 mt-5 pt-4"> 🚗 🗺️ 🏞️ </p>
+        <h1 class="display-5 fw-bold text-body-emphasis">Calculadora de combustible<br>para tus viajes</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Como viajera, me encanta planear todo con anticipación mucho antes de salir de casa. Y
+                para cuentas claras, qué mejor que una calculadora para ver cuánto te va a costar ese viajecito que
+                estás planeando con tus amigos. </p>
+
+        </div>
+    </div>
+
+
+    <form id="viajeForm" class="col-lg-6 mx-auto py-4">
+        <div class="mb-3">
+            <label for="distancia" class="form-label">Distancia del viaje (km)</label>
+            <input type="number" class="form-control" id="distancia" required>
+        </div>
+        <div class="mb-3">
+            <label for="precioCombustible" class="form-label">Precio del litro de combustible ($)</label>
+            <input type="number" step="0.01" class="form-control" id="precioCombustible" required>
+        </div>
+        <div class="mb-3">
+            <label for="rendimientoAuto" class="form-label">Rendimiento del auto (km/l)</label>
+            <input type="number" step="0.01" class="form-control" id="rendimientoAuto" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+
+    <div id="resultado" class="col-lg-6 mx-auto py-4"></div>
+
+
+    <section id="viajesSection" class="col-lg-6 mx-auto py-4">
+        <h2 id="viajesTitle" class="display-5 fw-bold text-body-emphasis mx-auto">Mis viajes calculados 🚗 🗺️ 🏞️</h2>
+        <button id="borrarHistorialBtn" class="btn btn-danger mt-5 mx-auto" onclick="borrarHistorial()"
+            style="display: none;">Borrar Historial</button>
+        <div class="py-4">
+            <div id="viajesContainer" class="d-flex justify-content-center py-2"></div>
+        </div>
+
+        </div>
+    </section>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
