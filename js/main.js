@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const viajes = JSON.parse(localStorage.getItem('viajes')) || [];
     
     if (viajes.length > 0) {
-        // Si hay viajes, los muestra
+        // Si hay viajes, los muestra y muestra la sección 'viajesSection' en bloque 
         mostrarViajes();
+        viajesSection.style.display = 'block';
     } else {
         // Si no hay viajes, oculta la 'viajesSection' y comienza en 1 sola screenview
         viajesSection.style.display = 'none';
