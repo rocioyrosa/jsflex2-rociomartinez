@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const viajes = JSON.parse(localStorage.getItem('viajes')) || [];
     
     if (viajes.length > 0) {
-        // Si hay viajes, los muestra y muestra la sección 'viajesSection' en bloque 
+        // Si hay viajes, los muestra y muestra la sección 'viajesSection' en bloque
         mostrarViajes();
         viajesSection.style.display = 'block';
     } else {
@@ -70,6 +70,8 @@ function mostrarViajes() {
     const viajesContainer = document.getElementById('viajesContainer');
     const borrarHistorialBtn = document.getElementById('borrarHistorialBtn');
     const viajesTitle = document.getElementById('viajesTitle');
+    const viajesSection = document.getElementById('viajesSection')
+
 
     viajesContainer.innerHTML = ''; // Limpia el contenido actual para que no se dupliquen las cards de viajes
 
@@ -96,6 +98,7 @@ function mostrarViajes() {
 
         borrarHistorialBtn.style.display = 'block'; // Asegura que el botón y el título de la section se muestren en bloques
         viajesTitle.style.display = 'block';
+        viajesSection.style.display ='block';
 
     } else {
         // Si no hay viajes, muestra un mensaje que lo indica y oculta botón y título 
