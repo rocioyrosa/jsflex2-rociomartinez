@@ -13,8 +13,8 @@
 
 
     <div class="py-1 text-center">
-        <p class="display-5 mt-5 pt-4"> 🚗 🗺️ 🏞️ </p>
-        <h1 class="display-5 fw-bold text-body-emphasis">Calculadora de combustible<br>para tus viajes</h1>
+        <p class="display-5 mt-5 p-4"> 🚗 🗺️ 🏞️ </p>
+        <h1 class="display-5 fw-bold text-body-emphasis text-center">Calculadora de combustible<br>para tus viajes</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Como viajera, me encanta planear todo con anticipación mucho antes de salir de casa. Y
                 para cuentas claras, qué mejor que una calculadora para ver cuánto te va a costar ese viajecito que
@@ -24,7 +24,7 @@
     </div>
 
 
-    <form id="viajeForm" class="col-lg-6 mx-auto py-4">
+    <form id="viajeForm" class="col-lg-6 mx-auto p-4">
         <div class="mb-3">
             <label for="distancia" class="form-label">Distancia del viaje (km)</label>
             <input type="number" class="form-control" id="distancia" required>
@@ -44,12 +44,12 @@
     <div id="resultado" class="col-lg-6 mx-auto py-4"></div>
 
 
-    <section id="viajesSection" class="col-lg-6 mx-auto py-4">
-        <h2 id="viajesTitle" class="display-5 fw-bold text-body-emphasis mx-auto">Mis viajes calculados 🚗 🗺️ 🏞️</h2>
+    <section id="viajesSection" class="p-4 mx-sm-auto">
+        <h2 id="viajesTitle" class="display-5 fw-bold text-body-emphasis text-center">Mis viajes calculados 🚗 🗺️ 🏞️</h2>
         <button id="borrarHistorialBtn" class="btn btn-danger mt-5 mx-auto" onclick="borrarHistorial()"
             style="display: none;">Borrar Historial</button>
         <div class="py-4">
-            <div id="viajesContainer" class="d-flex justify-content-center py-2"></div>
+            <div id="viajesContainer" class="d-flex justify-content-center row row-cols-1 row-cols-sm-4 g-1"></div>
         </div>
     </section>
 

@@ -80,7 +80,7 @@ function mostrarViajes() {
             // Para cada viaje, si hay, crea una tarjeta (card) con la información
 
             const card = document.createElement('div');
-            card.classList.add('card', 'm-2');
+            card.classList.add('card', 'm-3', 'col');
 
             card.innerHTML = `
                 <div class="card-body">
