@@ -17,7 +17,7 @@
 
 <body>
 
-
+<section class="main-section">
     <div class="py-1 text-center px-4 mx-sm-auto">
         <p class="display-5 mt-5 p-4"> 🚗 🗺️ 🏞️ </p>
         <h1 class="display-5 fw-bold text-body-emphasis text-center">Calculadora de combustible<br>para tus viajes</h1>
@@ -31,15 +31,15 @@
 
 
     <form id="viajeForm" class="col-lg-6 mx-auto p-4">
-        <div class="mb-3">
+        <div class="mb-3 border rounded-3 mb-4 bg-light-subtle p-2">
             <label for="distancia" class="form-label">Distancia del viaje (km)</label>
             <input type="number" class="form-control" id="distancia" required>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 border rounded-3 mb-4 bg-light-subtle p-2">
             <label for="precioCombustible" class="form-label">Precio del litro de combustible ($)</label>
             <input type="number" step="0.01" class="form-control" id="precioCombustible" required>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 border rounded-3 mb-4 bg-light-subtle p-2">
             <label for="rendimientoAuto" class="form-label">Rendimiento del auto (km/l)</label>
             <input type="number" step="0.01" class="form-control" id="rendimientoAuto" required>
         </div>
@@ -49,9 +49,11 @@
 
     <div id="resultado" class="col-lg-6 mx-auto py-4"></div>
 
+</section>
 
-    <section id="viajesSection" class="p-4 mx-sm-auto">
-        <h2 id="viajesTitle" class="display-5 fw-bold text-body-emphasis text-center">Mis viajes calculados 🚗 🗺️ 🏞️
+
+    <section id="viajesSection" class="p-5 mx-sm-auto">
+        <h2 id="viajesTitle" class="pt-5 display-5 fw-bold text-body-emphasis text-center">Mis viajes calculados 🚗 🗺️ 🏞️
         </h2>
         <button id="borrarHistorialBtn" class="btn btn-danger mt-5 mx-auto" onclick="borrarHistorial()"
             style="display: none;">Limpiar Historial</button>
@@ -60,7 +62,7 @@
         </div>
     </section>
 
-    <section class="px-4 mx-sm-auto py-5 bg-primary-subtle">
+    <section class="clima-section px-4 mx-sm-auto py-5 bg-primary-subtle">
 
         <h3 class="h3 fw-bold text-body-emphasis text-center py-3">¿A dónde vas?<br>Chequeá el clima que te espera 🌤️
             🌈 ☔

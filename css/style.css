@@ -1,5 +1,12 @@
 body {
-    font-family: 'Roboto Flex', sans-serif!important;
+    font-family: 'Roboto Flex', sans-serif !important;
+}
+
+.main-section {
+    background-image: url(./img/fondo-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 h1,
@@ -7,5 +14,18 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Roboto Flex', sans-serif!important;
+    font-family: 'Roboto Flex', sans-serif !important;
+}
+
+
+.bg-light-subtle {
+--bs-bg-opacity: .5;
+}
+
+.clima-section{
+    background-image: url(./img/fondo-img2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
