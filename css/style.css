@@ -1,5 +1,9 @@
 body {
-    font-family: 'Roboto Flex', sans-serif !important;
+    font-family: "Roboto Flex", sans-serif !important;
+}
+
+body .bg-light-subtle {
+    --bs-bg-opacity: .5;
 }
 
 .main-section {
@@ -7,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: "Roboto Flex", sans-serif !important;
 }
 
 h1,
@@ -14,18 +19,20 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Roboto Flex', sans-serif !important;
+    font-family: "Roboto Flex", sans-serif !important;
 }
 
-
-.bg-light-subtle {
---bs-bg-opacity: .5;
+.section-viajes {
+    font-family: "Roboto Flex", sans-serif !important;
+    background-color: rgb(239, 232, 222);
 }
 
-.clima-section{
+.clima-section {
     background-image: url(./img/fondo-img2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    font-family: "Roboto Flex", sans-serif !important;
 }
+
+/*# sourceMappingURL=style.css.map */
